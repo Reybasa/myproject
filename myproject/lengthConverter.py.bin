@@ -1,0 +1,96 @@
+# Length conversion program
+
+# Function to convert meters to other units
+def convert_meters(length):
+    print("1. Centimeters")
+    print("2. Miles")
+    print("3. Yards")
+    print("4. Feet")
+    print("5. Inches")
+    choice = input("Select the unit to convert to (1/2/3/4/5): ")
+    if choice == '1':
+        return length * 100
+    elif choice == '2':
+        return length * 0.000621371
+    elif choice == '3':
+        return length * 1.09361
+    elif choice == '4':
+        return length * 3.28084
+    elif choice == '5':
+        return length * 39.3701
+    else:
+        print("Invalid choice!")
+        return None
+
+# Function to convert centimeters to other units
+def convert_centimeters(length):
+    print("1. Meters")
+    print("2. Miles")
+    print("3. Yards")
+    print("4. Feet")
+    print("5. Inches")
+    choice = input("Select the unit to convert to (1/2/3/4/5): ")
+    if choice == '1':
+        return length / 100
+    elif choice == '2':
+        return length * 0.00000621371
+    elif choice == '3':
+        return length * 0.0109361
+    elif choice == '4':
+        return length * 0.0328084
+    elif choice == '5':
+        return length * 0.393701
+    else:
+        print("Invalid choice!")
+        return None
+
+# Function to convert miles to other units
+def convert_miles(length):
+    print("1. Meters")
+    print("2. Centimeters")
+    print("3. Yards")
+    print("4. Feet")
+    print("5. Inches")
+    choice = input("Select the unit to convert to (1/2/3/4/5): ")
+    if choice == '1':
+        return length / 0.000621371
+    elif choice == '2':
+        return length / 0.00000621371
+    elif choice == '3':
+        return length * 1760
+    elif choice == '4':
+        return length * 5280
+    elif choice == '5':
+        return length * 63360
+    else:
+        print("Invalid choice!")
+        return None
+
+# Function to convert yards to other units
+def convert_yards(length):
+    print("1. Meters")
+    print("2. Centimeters")
+    print("3. Miles")
+    print("4. Feet")
+    print("5. Inches")
+    choice = input("Select the unit to convert to (1/2/3/4/5): ")
+    if choice == '1':
+        return length / 1.09361
+    elif choice == '2':
+        return length / 0.0109361
+    elif choice == '3':
+        return length * 0.000568182
+    elif choice == '4':
+        return length * 3
+    elif choice == '5':
+        return length * 36
+    else:
+        print("Invalid choice!")
+        return None
+
+# Function to convert feet to other units
+def convert_feet(length):
+    print("1. Meters")
+    print("2. Centimeters")
+    print("3. Miles")
+   
